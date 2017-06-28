@@ -4,7 +4,6 @@
     <title>Allison Chuang</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
@@ -13,14 +12,14 @@
     <div class="image" id="opener">
       <nav id="nav-bar">
         <div id=nav-left>Allison Chuang</div>
-        <button type="Contact">Contact Me!</button>
+        <div id="contact-link-div"><a href="#contact" id="contact-link"><button type="contact">Contact Me!</button></a></div>
       </nav>
       <div id="welcome-body">
         <div id="welcome-flex">
           <div class="welcome">Hello, it's me</div>
           <div class="more">
             <div id="more-text">Find out more</div>
-            <button type="arrow"><i class="fa fa-angle-double-down fa-5x" aria-hidden="true"></i></button>
+            <a href="#about"><button type="arrow"><i class="fa fa-angle-double-down fa-5x" aria-hidden="true"></i></button></a>
           </div>
         </div>
       </div>
@@ -62,8 +61,8 @@
           <div class="project-info">
             I created an authenticated blog app where users can
             only create and update posts if they are signed in.
-            The client side of this project was created using
-            react and redux. The api side was created using mongo.
+            The client side of this project was created using react and
+            redux. The server side was created using express and mongoDB.
             Check it out <a href="http://allisonchuang-lab5.surge.sh/">here!</a>
           </div>
         </div>
@@ -89,14 +88,14 @@
     </div>
     <div id="project3" class="block">
       <div id="project-images">
-        <img src="images/library-booking.png" class="library-booking" />
+        <img src="images/library-booking.gif" class="library-booking" />
         <div>
           <div class="project-title">Booking Site</div>
           <div class="project-info">
             My partner, Annie Ke, and I redesigned the Dartmouth
             library study space booking site for a better user
-            experience. We used react and redux to create a dynamic
-            booking feedback for users. For a cleaner design, we made
+            experience. We used react and redux to create dynamic
+            feedback for users. For a cleaner design, we made
             use of Google's Material-ui component library. Check it out
             <a href="http://dartmouth-library-booking.surge.sh/">here!</a>
           </div>
@@ -112,16 +111,27 @@
           <div class="project-info">
             I am part of an effort to create an easier application
             screening process for the Rewriting the Code organization
-            for women in computer science. The goal is to take the
-            application information and consolidate it into a cleaner
-            and more readable format for reviewers.
+            for women in computer science (check them out
+            <a href="http://rewritingthecode.org/">here!</a>).
+            The goal is to take the application information and consolidate
+            it into a cleaner and more readable format for reviewers.
           </div>
         </div>
       </div>
     </div>
     <div class="image" id="view">
     </div>
+
     <div id="contact" class="block">
+      <div id="icon-links">
+        <div class="icon-circle"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></div>
+        <div class="icon-circle"><i class="fa fa-github fa-3x" aria-hidden="true"></i></div>
+        <div class="icon-circle"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></div>
+        <div class="icon-circle"><i class="fa fa-youtube-play fa-3x" aria-hidden="true"></i></div>
+      </div>
     </div>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
   </body>
 </html>

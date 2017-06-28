@@ -22,6 +22,7 @@ body, html {
 button[type="contact"] {
   margin-right: 2.5%;
   margin-top: 1.5%;
+  width: 100%;
   background: rgba(0, 0, 0, 0);
   border: 1px solid;
   border-color: white;
@@ -39,6 +40,16 @@ button[type="contact"]:focus {
   outline: none;
 }
 
+#contact-link-div {
+  margin-right: 2.5%;
+  margin-top: 1.5%;
+}
+
+#contact-link {
+  margin-right: 2.5%;
+  margin-top: 1.5%;
+}
+
 .image {
   height: 100%;
   background-attachment: fixed;
@@ -53,11 +64,11 @@ button[type="contact"]:focus {
       rgba(0, 0, 0, 0.25)
     ),
     url('images/me.jpg');
-    height: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #welcome-body {
@@ -113,18 +124,8 @@ button[type="arrow"] {
   background: rgba(0, 0, 0, 0);
   border: none;
   color: white;
-  /*transition: all .3s;*/
-  /*transform: scale(1);*/
   animation: downArrow 1s linear infinite;
-  /*animation-duration: 1s;*/
-  /*animation-fill-mode:forwards;*/
-  /*animation-iteration-count: infinite;
-  animation-timing-function: linear;*/
 }
-/*
-button[type="arrow"]:hover {
-  margin-top: .5em;
-}*/
 
 button[type="arrow"]:focus {
   outline: none;
@@ -173,11 +174,11 @@ button[type="arrow"]:focus {
       rgba(0, 0, 0, 0.4)
     ),
     url('images/tennis.jpg');
-    height: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #project-images {
@@ -228,7 +229,7 @@ a:visited {
 }
 
 #project1 {
-  background: rgb(206,33,54);
+  background: rgb(248,69,91);
   height: 95%;
 }
 
@@ -253,14 +254,30 @@ a:visited {
       rgba(0, 0, 0, 0)
     ),
     url('images/view.jpg');
-    height: 70%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  height: 70%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#icon-links {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-circle {
+  margin: 1em;
 }
 
 #contact {
   background: rgb(0,0,0);
-  height: 50%;
+  height: 40%;
+}
+
+#contact:focus {
+  outline: 0;
+  outline: none;
 }
