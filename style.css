@@ -589,6 +589,9 @@ a:visited {
   #nav-left {
     display: none;
   }
+  #contact-link-div {
+    margin-top: 1em;
+  }
   #nav-bar {
     justify-content: flex-end;
   }
@@ -636,6 +639,10 @@ a:visited {
 @media only screen and (max-width: 400px) {
   #about {
     height: 140%;
+  }
+  #nav-bar {
+    width: 100%;
+    justify-content: flex-end;
   }
 }
   /*#nav-bar {
