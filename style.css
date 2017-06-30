@@ -628,6 +628,9 @@ a:visited {
     height: 90%;
     background-position: 75% 90%;
   }*/
+  #contact-link-div {
+    width: 10em;
+  }
 }
 
 @media only screen and (max-width: 400px) {
