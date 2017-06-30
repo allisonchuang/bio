@@ -611,3 +611,12 @@ a:visited {
     height: 174px;
   }
 }
+
+@media only screen and (max-width: 400px) {
+  #about {
+    height: 150%;
+  }
+  #nav-left {
+    font-size: 2em;
+  }
+}
