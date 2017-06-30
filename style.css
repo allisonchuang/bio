@@ -322,6 +322,10 @@ a:visited {
   outline: none;
 }
 
+.hidden {
+  display: none;
+}
+
 @media only screen and (max-width: 1240px) {
   #first-to-go {
     display: none;
@@ -396,11 +400,14 @@ a:visited {
   .welcome {
     display: none;
   }
+  #less-hidden {
+    display: block;
+    margin-top: 4.7em;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3em;
+  }
   #more-text {
     display: none;
-  }
-  #arrow {
-    margin-top: 15em;
   }
 }
 
@@ -563,11 +570,12 @@ a:visited {
   #native-project-info {
     width: 100%;
   }
-  #nav-left {
+  /*#nav-left {
     font-size: 2.5em;
-  }
-  button[type="contact"] {
-    font-size: 1.1em;
+  }*/
+  .hidden {
+    font-size: 2.5em;
+    margin-top: 7em;
   }
 }
 
@@ -578,11 +586,17 @@ a:visited {
   #about {
     height: 120%;
   }
-  button[type="contact"] {
-    font-size: .9em;
-  }
   #nav-left {
-    font-size: 2.3em;
+    display: none;
+  }
+  #nav-bar {
+    justify-content: flex-end;
+  }
+  #less-hidden {
+    display: none;
+  }
+  #even-more-hidden {
+    display: block
   }
 }
 
@@ -610,13 +624,28 @@ a:visited {
     width: 310px;
     height: 174px;
   }
+  /*#opener {
+    height: 90%;
+    background-position: 75% 90%;
+  }*/
 }
 
 @media only screen and (max-width: 400px) {
   #about {
-    height: 150%;
+    height: 120%;
+  }
+  /*#nav-bar {
+    justify-content: flex-end;
   }
   #nav-left {
-    font-size: 2em;
+    display: none;
+  }*/
+  #even-more-hidden {
+    font-size: 2.3em;
+    margin-top: 8em;
+  }
+  #header-about {
+    font-size: 2.3em;
+    /*margin-left: .2em;*/
   }
 }
