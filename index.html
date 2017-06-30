@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
   </head>
   <body>
@@ -19,63 +20,86 @@
           <div class="welcome">Hello, it's me</div>
           <div class="more">
             <div id="more-text">Find out more</div>
-            <a href="#about"><button type="arrow"><i class="fa fa-angle-double-down fa-5x" aria-hidden="true"></i></button></a>
+            <div id="arrow">
+              <a href="#about"><button type="arrow"><i class="fa fa-angle-double-down fa-5x" aria-hidden="true"></i></button></a>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <div id="about" class="block">
-      <div class="header">Hello! I'm Allison.</div>
-      <div class="info">
-        I am a '19 majoring in Computer Science and minoring in Human-Centered Design.
-        I am from Albany, CA and plan to move back to the Bay Area after I graduate
-        to escape the miserable cold that is Hanover. I am on the Dartmouth women's tennis team and
-        spend a LOT of time playing tennis. When I'm not on the court, I'm eating, studying,
-        or now working for DALI! I am also an amateur music video maker. Check out my videos!
-      </div>
-      <div id="videos">
-        <iframe
-          class="vid" width="463" height="260"
-          src="https://www.youtube.com/embed/eToX3ieMnH0"
-          frameborder="0" allowfullscreen>
-        </iframe>
-        <iframe
-          class="vid" width="463" height="260"
-          src="https://www.youtube.com/embed/djMgR6VPsSg"
-          frameborder="0" allowfullscreen>
-        </iframe>
+      <div>
+        <div class="header" id="header-about">Hello! I'm Allison.</div>
+        <div class="info">
+          I am a Dartmouth '19 majoring in Computer Science and minoring in Human-Centered Design.
+          I am from Albany, CA and hope to move back to the Bay Area after I graduate
+          to escape the miserable cold that is Hanover. I am on the Dartmouth women's tennis team and
+          spend a LOT of time playing tennis. When I'm not on the court, I'm eating, studying,
+          or now working for DALI! I am also an amateur music video maker. Check out my videos!
+        </div>
+        <div id="videos">
+          <iframe
+            class="vid" width="463" height="260"
+            src="https://www.youtube.com/embed/eToX3ieMnH0"
+            frameborder="0" allowfullscreen>
+          </iframe>
+          <iframe
+            class="vid" width="463" height="260" id="vid-go"
+            src="https://www.youtube.com/embed/djMgR6VPsSg"
+            frameborder="0" allowfullscreen>
+          </iframe>
+        </div>
       </div>
     </div>
     <div class="image" id="tennis">
-      <nav>
+      <nav id="tennis-div">
         <div id="tennis-text">Go Big Green!</div>
       </nav>
     </div>
-    <div id="project1" class="block">
-      <div class="header">Projects</div>
-      <div id="project-images">
-        <img src="images/post.png" class="img-link-no-shadow" />
-        <img src="images/post2.png" class="img-link-no-shadow" />
+    <div class="block-header" class="block">
+      <div class="header">Experience</div>
+    </div>
+    <div id="project0" class="block">
+      <div class="project-images">
+        <img src="images/teamworks-logo.png" class="teamworks" />
         <div>
-          <div class="project-title">Blog App</div>
+          <div class="project-title">Teamworks</div>
           <div class="project-info">
-            I created an authenticated blog app where users can
-            only create and update posts if they are signed in.
-            The client side of this project was created using react and
-            redux. The server side was created using express and mongoDB.
-            Check it out <a href="http://allisonchuang-lab5.surge.sh/">here!</a>
+            I interned as a software engineer at Teamworks. Teamworks
+            is a communication and operations platform for organizations.
+            You can check them out <a href="http://www.teamworks.com/">here</a>!
+             On the development team I worked with their API and contributed
+            to multiple views on their new mobile app.
           </div>
         </div>
       </div>
     </div>
-    <div id="project2" class="block">
-      <div id="project-images">
-        <img src="images/matchPage.png" class="matchpage" />
-        <img src="images/profilescreenshot.png" class="img-link-tall" />
-        <img src="images/matchhistory.png" class="img-link-tall" />
+    <div id="project05" class="block">
+      <div class="project-images">
+        <img src="images/rtc-logo.png" class="img-link-no-shadow" id="rtc-logo" />
         <div>
-          <div class="project-title">MunchBuddy</div>
+          <div class="project-title">Rewriting the Code</div>
           <div class="project-info">
+            I am a fellow of Rewriting the Code. Rewriting the Code is an
+            organization committed to helping women advance in tech. Check
+            it out <a href="http://rewritingthecode.org/">here</a>! I am
+            an ambassador for the program and have taken part in developing the
+            webpage for their application process.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="block-header" class="block">
+      <div class="header">Projects</div>
+    </div>
+    <div id="project1" class="block">
+      <div class="project-images" id="native-app">
+        <img src="images/matchPage.png" class="matchpage" />
+        <img src="images/profilescreenshot.png" class="img-link-tall" id="first-to-go" />
+        <img src="images/matchhistory.png" class="img-link-tall" id="next-to-go" />
+        <div>
+          <div class="project-title" id="native-project-title">MunchBuddy</div>
+          <div class="project-info" id="native-project-info">
             For our final project in CS52, my team designed
             and implemented a react-native mobile app that connects strangers
             to grab meals together. Users can create an account and get
@@ -86,8 +110,23 @@
         </div>
       </div>
     </div>
+    <div id="project2" class="block">
+      <div class="project-images">
+        <img src="images/blog.gif" class="library-booking" />
+        <div>
+          <div class="project-title">Blog App</div>
+          <div class="project-info">
+            I created an authenticated blog app where users can
+            only create and update posts if they are signed in.
+            The client side of this project was created using react and
+            redux. The server side was created using express and mongoDB.
+            Check it out <a href="http://allisonchuang-lab5.surge.sh/">here</a>!
+          </div>
+        </div>
+      </div>
+    </div>
     <div id="project3" class="block">
-      <div id="project-images">
+      <div class="project-images">
         <img src="images/library-booking.gif" class="library-booking" />
         <div>
           <div class="project-title">Booking Site</div>
@@ -97,22 +136,21 @@
             experience. We used react and redux to create dynamic
             feedback for users. For a cleaner design, we made
             use of Google's Material-ui component library. Check it out
-            <a href="http://dartmouth-library-booking.surge.sh/">here!</a>
+            <a href="http://dartmouth-library-booking.surge.sh/">here</a>!
           </div>
         </div>
       </div>
     </div>
     <div id="project4" class="block">
-      <div id="project-images">
-        <img src="images/rtc-application.png" class="rtc" />
-        <img src="images/rtc-applicants.png" class="rtc" />
+      <div class="project-images">
+        <img src="images/rtc-application.png" class="rtc" id="rtc-go" />
+        <img src="images/rtc-applicants.png" class="rtc" id="rtc-stay" />
         <div>
           <div class="project-title">Rewriting the Code</div>
           <div class="project-info">
             I am part of an effort to create an easier application
             screening process for the Rewriting the Code organization
-            for women in computer science (check them out
-            <a href="http://rewritingthecode.org/">here!</a>).
+            for women in computer science.
             The goal is to take the application information and consolidate
             it into a cleaner and more readable format for reviewers.
           </div>
@@ -124,10 +162,18 @@
 
     <div id="contact" class="block">
       <div id="icon-links">
-        <div class="icon-circle"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></div>
-        <div class="icon-circle"><i class="fa fa-github fa-3x" aria-hidden="true"></i></div>
-        <div class="icon-circle"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></div>
-        <div class="icon-circle"><i class="fa fa-youtube-play fa-3x" aria-hidden="true"></i></div>
+        <a href="mailto:allison.p.chuang.19@dartmouth.edu" class="icon-link">
+          <div class="icon-circle"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></div>
+        </a>
+        <a href="https://github.com/allisonchuang" class="icon-link">
+          <div class="icon-circle"><i class="fa fa-github fa-3x" aria-hidden="true"></i></div>
+        </a>
+        <a href="https://www.linkedin.com/in/allisonchuang/" class="icon-link">
+          <div class="icon-circle"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></div>
+        </a>
+        <a href="https://www.youtube.com/channel/UCNBTwsP4WtqDen2vXZ8XVXw" class="icon-link">
+          <div class="icon-circle"><i class="fa fa-youtube-play fa-3x" aria-hidden="true"></i></div>
+        </a>
       </div>
     </div>
 

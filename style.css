@@ -50,12 +50,12 @@ button[type="contact"]:focus {
   margin-top: 1.5%;
 }
 
-.image {
+/*.image {
   height: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-}
+}*/
 
 #opener {
   background:
@@ -66,7 +66,7 @@ button[type="contact"]:focus {
     url('images/me.jpg');
   height: 100%;
   background-attachment: fixed;
-  background-position: center;
+  background-position: 75% 50%;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -74,7 +74,7 @@ button[type="contact"]:focus {
 #welcome-body {
   margin-top: 10.5em;
   margin-left: 6em;
-  font-family: 'Helvetica', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 #welcome-flex {
@@ -90,8 +90,8 @@ button[type="contact"]:focus {
 }
 
 @keyframes onLoadMore {
-  from { margin-top: 0em; }
-  to { margin-top: 1.5em; }
+  from { margin-top: -1em; }
+  to { margin-top: 0em; }
   from { opacity: 0; }
   to { opacity: 1; }
 }
@@ -131,15 +131,33 @@ button[type="arrow"]:focus {
   outline: none;
 }
 
-.block {
+.block-header {
+  background: black;
+  height: 30%;
   box-sizing: border-box;
-  height: 105%;
   padding: 2em;
   font-family: 'Source Sans Pro', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.block {
+  box-sizing: border-box;
+  height: 85%;
+  padding: 2em;
+  font-family: 'Source Sans Pro', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .header {
   font-size: 3.5em;
+}
+
+#header-about {
   margin-bottom: .3em;
 }
 
@@ -154,6 +172,7 @@ button[type="arrow"]:focus {
 
 #about {
   background: rgb(33,98,168);
+  height: 105%;
 }
 
 .info {
@@ -162,7 +181,7 @@ button[type="arrow"]:focus {
 
 #tennis-text {
   font-size: 4em;
-  font-family: 'Helvetica', sans-serif;
+  font-family: 'Poppins', sans-serif;
   padding-top: 5em;
   padding-left: 2em;
 }
@@ -176,16 +195,18 @@ button[type="arrow"]:focus {
     url('images/tennis.jpg');
   height: 100%;
   background-attachment: fixed;
-  background-position: center;
+  background-position: 70% 50%;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-#project-images {
+.project-images {
+  width: 100%;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  margin-top: 4em;
+  flex-wrap: wrap;
 }
 
 .img-link-no-shadow {
@@ -214,13 +235,17 @@ button[type="arrow"]:focus {
   box-shadow: 0 .3em .5em .3em rgba(0, 0, 0, .3);
 }
 
+a {
+  color: white;
+}
+
 a:visited {
   color: white;
 }
 
 .project-title {
   font-size: 3em;
-  margin-top: -.5em;
+  margin-top: 0em;
 }
 
 .project-info {
@@ -228,23 +253,34 @@ a:visited {
   width: 17em;
 }
 
+.teamworks {
+  background: white;
+  box-shadow: 0 .3em .5em .3em rgba(0, 0, 0, .3);
+}
+
+#project0 {
+  background: rgb(161,199,56);
+}
+
+#project05 {
+  background: rgb(0,197,177);
+}
+
 #project1 {
   background: rgb(248,69,91);
-  height: 95%;
+  height: 100%;
 }
 
 #project2 {
-  background: rgb(228,87,104);
+  background: rgb(250,141,40);
 }
 
 #project3 {
-  background: rgb(250,127,142);
-  height: 85%;
+  background: rgb(253,118,145);
 }
 
 #project4 {
-  background: rgb(255,158,170);
-  height: 85%;
+  background: rgb(255,175,56);
 }
 
 #view {
@@ -256,7 +292,7 @@ a:visited {
     url('images/view.jpg');
   height: 70%;
   background-attachment: fixed;
-  background-position: center;
+  background-position: 0% 50%;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -272,6 +308,10 @@ a:visited {
   margin: 1em;
 }
 
+.icon-link {
+  color: white;
+}
+
 #contact {
   background: rgb(0,0,0);
   height: 40%;
@@ -280,4 +320,294 @@ a:visited {
 #contact:focus {
   outline: 0;
   outline: none;
+}
+
+@media only screen and (max-width: 1240px) {
+  #first-to-go {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1220px) {
+  #rtc-go {
+    display: none;
+  }
+  #rtc-stay {
+    width: 33em;
+  }
+}
+
+@media only screen and (max-width: 1177px) {
+  iframe {
+    height: 225px;
+    width: 400px;
+  }
+  .teamworks {
+    width: 30em;
+  }
+}
+
+@media only screen and (max-width: 1140px) {
+  .library-booking {
+    width: 30em;
+  }
+  #rtc-stay {
+    width: 30em;
+  }
+}
+
+@media only screen and (max-width: 1040px) {
+  .library-booking {
+    width: 25em;
+  }
+  #rtc-stay {
+    width: 25em;
+  }
+  .teamworks {
+    width: 25em;
+  }
+}
+
+@media only screen and (max-width: 970px) {
+  #next-to-go {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .library-booking {
+    width: 23em;
+  }
+  #rtc-stay {
+    width: 23em;
+  }
+  .teamworks {
+    width: 23em;
+  }
+  #welcome-body {
+    margin-top: 0;
+    margin-left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .welcome {
+    display: none;
+  }
+  #more-text {
+    display: none;
+  }
+  #arrow {
+    margin-top: 15em;
+  }
+}
+
+@media only screen and (max-width: 940px) {
+  .project-info {
+    font-size: 1.4em;
+  }
+  .project-title {
+    font-size: 2.7em;
+  }
+  iframe {
+    height: 200px;
+    width: 355px;
+  }
+}
+
+@media only screen and (max-width: 890px) {
+  .library-booking {
+    width: 20em;
+  }
+  #rtc-stay {
+    width: 20em;
+  }
+  .teamworks {
+    width: 20em;
+  }
+  .block {
+    height: 80%;
+  }
+  #project1 {
+    height: 90%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .project-info {
+    width: 15em;
+  }
+  .project-title {
+    font-size: 2.5em;
+  }
+  .info {
+    font-size: 1.4em;
+  }
+  .header {
+    font-size: 3.3em;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  #vid-go {
+    display: none;
+  }
+  #tennis-text {
+    font-size: 3.7em;
+    padding-left: 0;
+    padding-top: 3em;
+  }
+  #tennis-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .project-info {
+    font-size: 1.3em;
+  }
+  .project-title {
+    font-size: 2.3em;
+  }
+  .info {
+    font-size: 1.4em;
+  }
+  .header {
+    font-size: 3.3em;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .project-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #native-app {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #native-project-info {
+    width: 15em;
+  }
+  #native-project-title {
+    margin-top: 0;
+    text-align: left;
+  }
+  .block {
+    flex-direction: row;
+  }
+  .project-info {
+    width: 100%;
+  }
+  .project-title {
+    margin-top: 1em;
+    text-align: center;
+  }
+  #rtc-logo {
+    width: 11em;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  #rtc-stay {
+    width: 18em;
+  }
+  .matchpage {
+    width: 11em;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  #header-about {
+    font-size: 2.8em;
+  }
+  .info {
+    font-size: 1.3em;
+  }
+  #tennis-text {
+    font-size: 3em;
+  }
+  .block-header {
+    height: 25%;
+  }
+  .header {
+    font-size: 2.9em;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .block {
+    height: 100%;
+  }
+  #project1 {
+    height: 120%;
+  }
+  #native-app {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  #native-project-title {
+    text-align: center;
+    margin-top: 1em;
+  }
+  #native-project-info {
+    width: 100%;
+  }
+  #nav-left {
+    font-size: 2.5em;
+  }
+  button[type="contact"] {
+    font-size: 1.1em;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  #project1 {
+    height: 140%;
+  }
+  #about {
+    height: 120%;
+  }
+  button[type="contact"] {
+    font-size: .9em;
+  }
+  #nav-left {
+    font-size: 2.3em;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .library-booking {
+    width: 17em;
+  }
+  #rtc-stay {
+    width: 17em;
+  }
+  .teamworks {
+    width: 17em;
+  }
+  #header-about {
+    font-size: 2.6em;
+    margin-left: .2em;
+  }
+  .info {
+    padding: .5em;
+  }
+  #tennis-text {
+    font-size: 2.5em;
+  }
+  iframe {
+    width: 310px;
+    height: 174px;
+  }
 }
