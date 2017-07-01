@@ -630,12 +630,17 @@ a:visited {
   }
 }*/
 
-/*@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 390px) {
   #about {
     height: 140%;
   }
   #nav-bar {
-    width: 100%;
-    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
   }
-}*/
+  #contact-link-div {
+    width: 10em;
+    margin-right: 1em;
+    margin-top: 2em;
+  }
+}
