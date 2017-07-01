@@ -633,10 +633,10 @@ a:visited {
 @media only screen and (max-width: 390px) {
   #about {
     height: 140%;
-    color: green;
+    color: purple;
   }
   #welcome-flex {
-    position: relative;
+    position: static;
   }
   #nav-bar {
     /*flex-direction: column;
