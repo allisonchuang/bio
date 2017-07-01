@@ -635,6 +635,9 @@ a:visited {
     height: 140%;
     color: green;
   }
+  #welcome-flex {
+    position: relative;
+  }
   #nav-bar {
     /*flex-direction: column;
     align-items: flex-end;*/
@@ -649,4 +652,5 @@ a:visited {
     width: 310px;
     height: 174px;
   }
+
 }
