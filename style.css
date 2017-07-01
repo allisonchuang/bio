@@ -382,8 +382,8 @@ a:visited {
     width: 23em;
   }
   #welcome-body {
-    margin-top: 0;
-    margin-left: 0;
+    margin-top: 0em;
+    margin-left: 0em;
     width: 100%;
     height: 100%;
     display: flex;
@@ -401,6 +401,9 @@ a:visited {
   }
   #more-text {
     display: none;
+  }
+  #welcome-flex {
+    position: static;
   }
 }
 
