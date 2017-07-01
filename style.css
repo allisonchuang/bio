@@ -603,7 +603,7 @@ a:visited {
 @media only screen and (max-width: 390px) {
   #about {
     height: 140%;
-    color: pink;
+    color: yellow;
   }
   #welcome-flex {
     position: static;
@@ -629,5 +629,14 @@ a:visited {
   }
   #view {
     background-attachment: initial;
+  }
+  .library-booking {
+    width: 16em;
+  }
+  #rtc-stay {
+    width: 16em;
+  }
+  .teamworks {
+    width: 16em;
   }
 }
