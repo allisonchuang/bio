@@ -633,11 +633,12 @@ a:visited {
 @media only screen and (max-width: 390px) {
   #about {
     height: 140%;
-    color: red;
+    color: green;
   }
   #nav-bar {
-    flex-direction: column;
-    align-items: flex-end;
+    /*flex-direction: column;
+    align-items: flex-end;*/
+    display: none;
   }
   #contact-link-div {
     width: 9em;
