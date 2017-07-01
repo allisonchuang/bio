@@ -50,13 +50,6 @@ button[type="contact"]:focus {
   margin-top: 1.5%;
 }
 
-/*.image {
-  height: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-}*/
-
 #opener {
   background:
     linear-gradient(
@@ -603,7 +596,6 @@ a:visited {
 @media only screen and (max-width: 390px) {
   #about {
     height: 140%;
-    color: yellow;
   }
   #welcome-flex {
     position: static;
@@ -638,5 +630,8 @@ a:visited {
   }
   .teamworks {
     width: 16em;
+  }
+  #tennis-text {
+    font-size: 2.8em;
   }
 }
